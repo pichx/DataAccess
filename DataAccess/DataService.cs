@@ -12,17 +12,22 @@ namespace DataAccess
 {
     public class DataService
     {
-        public string ConnectionString { get; set; }
+        public string ConnectionString = "Server=localhost;Database=Products;Trusted_Connection=true";
 
-        public Item GetItem(int id)
+        private string qryFullItem = @"select a.ItemId, a.ItemDescription, a.TypeId, b.TypeDescription, a.StatusId, c.StatusDescription, a.ChangeDate
+                                        from dbo.Item a 
+                                        inner join dbo.[Type] b on a.TypeId = b.TypeId
+                                        inner join dbo.[Status] c on a.StatusId = c.StatusId ";
+        public List<Item> GetItems(int? id = null)
         {
-            Item item = null;
+            List<Item> item = null;
             using (var conn = new SqlConnection())
             {
                 conn.ConnectionString = ConnectionString;// "Server=locahost;Database=Products;Trusted_Connection=true";
                 conn.Open();
-                var command = "select * from Item where ItemId = @Id;";
-                item = conn.Query<Item>(command, new { id }).FirstOrDefault();
+                var where = id != null ? " where ItemId = @id" : string.Empty ;
+                var command = qryFullItem + where;
+                item = conn.Query<Item>(command, new { id }).ToList();
                 conn.Close();
             }
 
@@ -34,9 +39,9 @@ namespace DataAccess
             List<App.Model.Type> types = null;
             using (var conn = new SqlConnection())
             {
-                conn.ConnectionString = ConnectionString;// "Server=locahost;Database=Products;Trusted_Connection=true";
+                conn.ConnectionString = ConnectionString;
                 conn.Open();
-                var command = "select * from type;";
+                var command = "select * from dbo.[Type];";
                 types = conn.Query<App.Model.Type>(command).ToList();
                 conn.Close();
             }

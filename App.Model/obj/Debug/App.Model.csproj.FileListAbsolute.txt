@@ -1,0 +1,6 @@
+C:\src\hj\DataAccess\App.Model\bin\Debug\App.Model.dll
+C:\src\hj\DataAccess\App.Model\bin\Debug\App.Model.pdb
+C:\src\hj\DataAccess\App.Model\obj\Debug\App.Model.csprojAssemblyReference.cache
+C:\src\hj\DataAccess\App.Model\obj\Debug\App.Model.csproj.CoreCompileInputs.cache
+C:\src\hj\DataAccess\App.Model\obj\Debug\App.Model.dll
+C:\src\hj\DataAccess\App.Model\obj\Debug\App.Model.pdb

@@ -8,8 +8,8 @@ namespace App.Model
 {
     public class Type
     {
-        public int Id { get; set; }
-        public string TypeName { get; set; }
+        public int TypeId { get; set; }
+        public string TypeDescription { get; set; }
         public DateTime ChangeDate { get; set; }
     }
 }

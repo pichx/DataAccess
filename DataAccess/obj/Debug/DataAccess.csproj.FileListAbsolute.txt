@@ -1,0 +1,12 @@
+C:\src\hj\DataAccess\DataAccess\bin\Debug\DataAccess.exe.config
+C:\src\hj\DataAccess\DataAccess\bin\Debug\DataAccess.exe
+C:\src\hj\DataAccess\DataAccess\bin\Debug\DataAccess.pdb
+C:\src\hj\DataAccess\DataAccess\bin\Debug\App.Model.dll
+C:\src\hj\DataAccess\DataAccess\bin\Debug\Dapper.dll
+C:\src\hj\DataAccess\DataAccess\bin\Debug\App.Model.pdb
+C:\src\hj\DataAccess\DataAccess\bin\Debug\Dapper.xml
+C:\src\hj\DataAccess\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+C:\src\hj\DataAccess\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\src\hj\DataAccess\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\src\hj\DataAccess\DataAccess\obj\Debug\DataAccess.exe
+C:\src\hj\DataAccess\DataAccess\obj\Debug\DataAccess.pdb

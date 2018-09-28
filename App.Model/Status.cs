@@ -8,7 +8,7 @@ namespace App.Model
 {
     public class Status
     {
-        public int Id { get; set; }
+        public int StatusId { get; set; }
         public string StatusDescription { get; set; }
         public DateTime ChangeDate { get; set; }
     }
